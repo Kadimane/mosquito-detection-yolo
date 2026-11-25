@@ -1,0 +1,88 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Datasets (keep directory documentation and placeholders)
+/data/raw/*
+!/data/raw/README.md
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/README.md
+!/data/processed/.gitkeep
+
+# Model checkpoints, exported weights, and experiment outputs
+/models/*
+!/models/README.md
+!/models/.gitkeep
+*.pt
+*.pth
+*.weights
+*.onnx
+*.engine
+*.tflite
+/outputs/*
+!/outputs/README.md
+!/outputs/.gitkeep
+!/outputs/runs/
+!/outputs/plots/
+/outputs/runs/**
+/outputs/plots/**
+!/outputs/runs/.gitkeep
+!/outputs/plots/.gitkeep
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Python cache and generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Generated model files
+*.pt
+*.onnx
+*.engine
+
+# Environment variables
+.env
+.env.*
+!.env.example

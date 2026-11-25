@@ -1,0 +1,1 @@
+"""Mosquito detection project package."""

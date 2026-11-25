@@ -1,0 +1,13 @@
+# Core computer-vision and YOLO workflow dependencies
+ultralytics
+opencv-python
+Pillow
+numpy
+PyYAML
+
+# Data analysis and visualization
+pandas
+matplotlib
+
+# Machine-learning evaluation utilities
+scikit-learn
