@@ -1,5 +1,7 @@
 # Core computer-vision and YOLO workflow dependencies
 ultralytics
+onnx
+onnxslim
 opencv-python
 Pillow
 numpy
