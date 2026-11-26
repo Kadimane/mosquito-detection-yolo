@@ -4,10 +4,10 @@ This repository contains reusable dataset utilities and an Ultralytics YOLO
 workflow for object detection. It includes a Colab notebook for reproducing a
 MosquitoFusion training run; dataset files and trained weights are not included.
 
-> **Results status:** This repository has not yet run training on MosquitoFusion.
-> No project-specific mAP score, trained checkpoint, or prediction image is
-> claimed here. The paper's reported score below is a reference result, not a
-> result from this repository.
+> **Results status:** Colab has not yet downloaded the dataset or started
+> training. No project-specific mAP score, trained checkpoint, or prediction
+> image is claimed here. The paper's reported score below is a reference
+> result, not a result from this repository.
 
 ## Architecture
 
@@ -116,12 +116,15 @@ against a real dataset.
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Kadimane/mosquito-detection-yolo/blob/main/notebooks/colab_train.ipynb)
 
 Open [`notebooks/colab_train.ipynb`](notebooks/colab_train.ipynb) in Google
-Colab, select a GPU runtime, and run the cells in order. The notebook prompts
-for a Kaggle API token in the Colab session (never commit or share the token),
-downloads and validates the dataset, then trains pretrained YOLOv8n for 30
-epochs at 640px with batch size 8. It evaluates on the dataset's held-out test
-split and generates annotated prediction examples, `metrics.png`, and a
-`summary.json`. Download the results archive before the Colab runtime ends.
+Colab, select an available GPU runtime, and run the cells in order. The Kaggle
+access cell prompts for a Kaggle API token using hidden input; the token is
+kept only in the current runtime's environment and must be entered again after
+a runtime reset. Never put it in notebook code, Colab Secrets, Git, or chat.
+The notebook downloads and validates the dataset, then trains pretrained
+YOLOv8n for 30 epochs at 640px with batch size 8. It evaluates on the dataset's
+held-out test split and generates annotated prediction examples, `metrics.png`,
+and a `summary.json`. Download the results archive before the Colab runtime
+ends.
 
 The notebook uses this repository's dataset validation, training, inference,
 and evaluation helpers. It does not modify the source dataset. To make the run
